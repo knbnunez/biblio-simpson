@@ -1,0 +1,29 @@
+<div *ngIf="profile" 
+    #card    
+    class="
+        rounded-lg 
+        shadow 
+        bg-gray-800 
+        border 
+        border-gray-700
+        flex
+        flex-col
+    "
+    [style.width]="width"
+    [style.height]="height"
+>
+    <div class="h-[90%] flex items-center justify-center rounded-t-lg bg-yellow-300">
+        <a [routerLink]="['/details/', profile.id]">
+            <img 
+                src="{{ profile.img }}" 
+                alt="not found" 
+                class="w-full h-48 my-[-2rem]"
+            />
+        </a>
+    </div>
+    <div id="container-name" class="h-[10%] w-full p-4">
+        <p id="name" href="#" class="text-sm font-bold text-gray-300 capitalize">
+            {{ profile.name }}
+        </p>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+#container-name {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+#name {
+    flex: 1;
+    
+    text-shadow: -0.5px -0.5px 3px rgb(0, 0, 0);
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
